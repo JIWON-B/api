@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirQuality</title>
+</head>
+<body>
+    <div class="main-contender">
+        {{>header}}
+        <p> 대기오염 정보를 얻으려는 시 또는 도를 입력해 주세요. </p>
+        <form action="/air" method="post">
+            <input placeholder="측정장소" name="location">
+            <button>Search</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirQuality</title>
+</head>
+<body>
+    <div class="main-content">
+
+        {{#each data}}
+            <p>측정장소: <span id="message-0">{{this.location}}</span></p>
+            <p>측정시각: <span id="message-1">{{this.time}}</span></p>
+            <p>측정소 명: <span id="message-2">{{this.stationName}}</span></p>
+            <p>일산화탄소 농도: <span id="message-3">{{this.coValue}}</span></p>
+            <p>오존 농도: <span id="message-4">{{this.o3Value}}</span></p>
+            <p>미세먼지(PM10) 농도: <span id="message-5">{{this.pm10}}</span></p>
+            <p>미세먼지(PM2.5) 농도: <span id="message-6">{{this.pm25}}</span></p>
+            <hr>
+        {{/each}}
+
+    </div>
+    
+</body>
+</html>
